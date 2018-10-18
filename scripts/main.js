@@ -2,7 +2,6 @@
 var card = document.getElementsByClassName('card');
 var circle = document.getElementsByClassName('circle');
 var content = document.getElementsByClassName('content-card');
-var col = document.getElementsByClassName('col');
 console.log(card,circle,content);
 
 
@@ -13,11 +12,13 @@ console.log(card,circle,content);
         if ( element.classList == "card-wrapper") {
         element.classList.remove('card-wrapper');
     element.classList.add('card-wrapper-select');
-    } else if ( element.classList == "card-wrapper-select" ) {
+    } else if ( element.classList == "card-wrapper-select card-wrapper-select-hover" ) {
         element.classList.remove('card-wrapper-select');
-    element.classList.add('card-wrapper');    
+        element.classList.remove('card-wrapper-select-hover');
+        element.classList.add('card-wrapper');
     }
     }
+
 
     for (i = 0; i < card.length; i++) {
       card[i].addEventListener('click', function(e) {
@@ -33,9 +34,12 @@ console.log(card,circle,content);
     } else if ( element.classList == "card-wrapper-select" ) {
         element.classList.remove('card-wrapper-select');
     element.classList.add('card-wrapper');    
+    } else if ( element.classList == "card-wrapper-select card-wrapper-select-hover" ) {
+        element.classList.remove('card-wrapper-select');
+        element.classList.remove('card-wrapper-select-hover');
+        element.classList.add('card-wrapper');
     }
     }
-
 
 
 
@@ -55,8 +59,13 @@ console.log(card,circle,content);
     } else if ( element.classList == "card-wrapper-select" ) {
         element.classList.remove('card-wrapper-select');
     element.classList.add('card-wrapper');    
+     } else if ( element.classList == "card-wrapper-select card-wrapper-select-hover" ) {
+        element.classList.remove('card-wrapper-select');
+        element.classList.remove('card-wrapper-select-hover');
+        element.classList.add('card-wrapper');
     }
     }
+
 
 
     for (i = 0; i < content.length; i++) {
@@ -65,13 +74,17 @@ console.log(card,circle,content);
         },false);
       }
 
-      for (i = 0; i < col.length; i++) {
-        col[i].addEventListener('mouseleave', function(e) {
-        leaveMouse(e);
-      },false);
+
+      function leaveMouse (e) {
+        var element = e.target.parentNode;
+        if (element.classList == 'card-wrapper-select'){
+        element.classList.add('card-wrapper-select-hover');
+        }
+    };
+
+    for (i = 0; i < content.length; i++) {
+        card[i].addEventListener('mouseleave',function(e) {
+            leaveMouse(e);
+        },false);
     }
-        function leaveMouse (e) {
-            var element = e.target.firstChildren;
-            element.classList.add('card-wrapper-select-hover');
-        };
 })();

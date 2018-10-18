@@ -158,19 +158,6 @@ body {
     border-bottom: 1px dashed #1698d9;
 }
 
-@media screen and (max-width: 1220px) {
-    html {
-        height: auto;
-    }
-    .title {
-        margin-top: 40px;
-    }
-    .col {
-        margin-bottom: 40px;
-    }
-}
-
-}
 .card-wrapper:hover {
     background: linear-gradient(135deg, transparent 31px, #2ea8e6 0);
 }
@@ -194,7 +181,7 @@ body {
 .card-wrapper-select-hover:hover {
     background: linear-gradient(135deg, transparent 31px, #e62e7a 0);
 }
-.card-wrapper-select:hover .circle {
+.card-wrapper-select-hover:hover .circle {
     background: #e62e7a;
 }
 .label-select {
@@ -238,11 +225,11 @@ body {
 
 }
 
- .label-select {
+ .label-select-hover {
     display: none;
 }
-.card-wrapper-select:hover .label-default { display: none; }
-.card-wrapper-select:hover .label-select { display: block; }
+.card-wrapper-select-hover:hover .label-default { display: none; }
+.card-wrapper-select-hover:hover .label-select-hover { display: block; color: #e62e7a; }
 
 /* additional-information */
 
@@ -274,4 +261,17 @@ body {
 .card-wrapper-selectr ~ .additional-information-disable, .card-wrapper ~ .additional-information-select, .card-wrapper ~ .additional-information-disable,
 .card-wrapper-select ~ .additional-information-default, .card-wrapper-disable ~ .additional-information-default, .card-wrapper-disable ~ .additional-information-select{
     display: none;
+}
+
+
+@media screen and (max-width: 1220px) {
+    html {
+        height: auto;
+    }
+    .title {
+        margin-top: 40px;
+    }
+    .col {
+        margin-bottom: 40px;
+    }
 }
