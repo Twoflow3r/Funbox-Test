@@ -1,14 +1,31 @@
-
+(function() {
 var card = document.getElementsByClassName('card');
 var circle = document.getElementsByClassName('circle');
 var content = document.getElementsByClassName('content-card');
+var link = document.getElementsByClassName('link');
 console.log(card,circle,content);
 
 
-(function() {
+function linkClick(e) {
+    var element = e.target.parentNode;
+    if ( element.classList == "card-wrapper") {
+    element.classList.remove('card-wrapper');
+element.classList.add('card-wrapper-select');
+    }
+}
+
+
+for (i = 0; i < link.length; i++) {
+    link[i].addEventListener('click', function(e) {
+        linkClick(e);
+  },false);
+}
+
+
+
     
     function cardClick(e) {
-        var element = e.target.parentNode;
+        var element = e.target.preventDefault;
         if ( element.classList == "card-wrapper") {
         element.classList.remove('card-wrapper');
     element.classList.add('card-wrapper-select');
