@@ -79,7 +79,7 @@ body {
     width: 320px;
     border-radius: 10px;
     background: linear-gradient(135deg, transparent 31px, #1698d9 0);
-    min-height: 490px;
+    height: 490px;
 }
 /* card */
 /*( http://webdiz.com.ua/figury/kak-srezat-ugly-na-css */
