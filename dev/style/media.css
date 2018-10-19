@@ -1,23 +1,25 @@
-
 @media screen and (max-width: 1220px) {
-    html {
-        height: auto;
-    }
-    .title {
-        margin-top: 40px;
-    }
-    .col {
-        margin-bottom: 40px;
-    }
+	html {
+		height: auto;
+	}
+
+	.title {
+		margin-top: 40px;
+	}
+
+	.col {
+		margin-bottom: 40px;
+	}
 }
+
 @media screen and (max-width: 992px) and (min-width:769px) {
-    .col {
-        width: 33%;
-    }
+	.col {
+		width: 33%;
+	}
 }
+
 @media screen and (max-width: 768px) {
-    .row {
-        flex-flow: column wrap;
-        
-    }
+	.row {
+		flex-flow: column wrap;
+	}
 }
