@@ -1,21 +1,17 @@
 @font-face {
     font-family: 'Exo 2 Thin';
-    src: url(../fonts/Exo2.0-Thin.otf);
+    src: url(../build/fonts/Exo2.0-Thin.otf);
+    src: url(/build/fonts/Exo2_0Thin.eot);
+    src: url(/build/fonts/Exo2_0Thin.eot) format('embedded-opentype'),
+       url(/build/fonts/Exo2_0Thin.woff2) format('woff2'),
+       url(/build/fonts/Exo2_0Thin.woff) format('woff'),
+       url(/build/fonts/Exo2_0Thin.ttf) format('truetype'),
+       url(/build/fonts/Exo2_0Thin.svg#Exo2_0Thin) format('svg');
     font-weight: 100;
     font-style: normal;
   }
+ 
 
-
-@font-face {
-    font-family: 'Exo 2 Thin';
-    src: url(../fonts/exo2.0-thin-webfont.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/exo2.0-thin-webfont.woff2) format('woff2'),
-        url(../fonts/exo2.0-thin-webfont.woff) format('woff'),
-        url(../fonts/exo2.0-thin-webfont.ttf) format('truetype'),
-        url(../fonts/exo2.0-thin-webfont.svg#exo_2.0thin) format('svg');
-    font-style: normal;
-    font-weight: 100;
-}
 
   * {
     box-sizing: border-box;
@@ -26,7 +22,10 @@
 
 
 body, html {
-     padding:0; margin:0; width:100%; height: 100%;
+     padding:0; 
+     margin:0; 
+     width:100%;
+     height: 100%;
     }
 body {
     background:  url(../img/cover.jpg);
