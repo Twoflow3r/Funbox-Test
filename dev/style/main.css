@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Exo 2 Thin';
-    src: url(/fonts/Exo2.0-Thin.otf);
+    src: url(../fonts/Exo2.0-Thin.otf);
     font-weight: 100;
     font-style: normal;
   }
@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: 'Exo 2 Thin';
-    src: url(/fonts/exo2.0-thin-webfont.eot?#iefix) format('embedded-opentype'),
-        url(/fonts/exo2.0-thin-webfont.woff2) format('woff2'),
-        url(/fonts/exo2.0-thin-webfont.woff) format('woff'),
-        url(/fonts/exo2.0-thin-webfont.ttf) format('truetype'),
-        url(/fonts/exo2.0-thin-webfont.svg#exo_2.0thin) format('svg');
+    src: url(../fonts/exo2.0-thin-webfont.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/exo2.0-thin-webfont.woff2) format('woff2'),
+        url(../fonts/exo2.0-thin-webfont.woff) format('woff'),
+        url(../fonts/exo2.0-thin-webfont.ttf) format('truetype'),
+        url(../fonts/exo2.0-thin-webfont.svg#exo_2.0thin) format('svg');
     font-style: normal;
     font-weight: 100;
 }
@@ -29,7 +29,7 @@ body, html {
      padding:0; margin:0; width:100%; height: 100%;
     }
 body {
-    background:  url(/img/cover.jpg);
+    background:  url(../img/cover.jpg);
     align-items: center;
     display: flex;
     height: 100%;
