@@ -1,5 +1,5 @@
 # Funbox Test
-Cборка Gulp 4
+Cборка Gulp 4. Стэк технологий
 Html
 Css
 Javascript
