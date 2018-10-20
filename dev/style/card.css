@@ -89,11 +89,11 @@
 	border-bottom: 1px dashed #1698d9;
 }
 
-.card-wrapper:hover {
+.card-wrapper:hover, .card-wrapper:focus , .card-wrapper:active {
 	background: linear-gradient(135deg, transparent 31px, #2ea8e6 0);
 }
 
-.card-wrapper:hover .circle {
+.card-wrapper:hover .circle , .card-wrapper:focus .circle, .card-wrapper:active .circle {
 	background: #2ea8e6;
 }
 /* select */
@@ -111,11 +111,11 @@
 	background-color: #d91667;
 }
 
-.card-wrapper-select-hover:hover {
+.card-wrapper-select-hover:hover ,.card-wrapper-select-hover:focus, .card-wrapper-select-hover:active {
 	background: linear-gradient(135deg, transparent 31px, #e62e7a 0);
 }
 
-.card-wrapper-select-hover:hover .circle {
+.card-wrapper-select-hover:hover .circle, .card-wrapper-select-hover:focus .circle, .card-wrapper-select-hover:active .circle {
 	background: #e62e7a;
 }
 
@@ -166,11 +166,11 @@
 	display: none;
 }
 
-.card-wrapper-select-hover:hover .label-default {
+.card-wrapper-select-hover:hover .label-default , .card-wrapper-select-hover:focus .label-default, .card-wrapper-select-hover:active .label-default {
 	display: none;
 }
 
-.card-wrapper-select-hover:hover .label-select-hover {
+.card-wrapper-select-hover:hover .label-select-hover, .card-wrapper-select-hover:focus .label-select-hover, .card-wrapper-select-hover:active .label-select-hover {
 	display: block;
 	color: #e62e7a;
 }
